@@ -1,0 +1,60 @@
+/*font-family: "Montserrat", sans-serif;*/
+/*font-family: 'Times New Roman', Times, serif;*/
+header {
+    background-color: #447D9B;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+.logo_main{
+    text-align: left;
+}
+.iconos_main{
+    text-align: end;
+}
+.titulo_main{
+    text-align: center;
+}
+
+nav {
+    background-color: #273F4F;
+    padding: 10px;
+}
+.nav_main{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    list-style: none;
+}
+.nav_main li a{
+    text-decoration: none;
+    color: #FE7743;
+}
+main{
+    background-color: #D7D7D7;
+    padding: 10px;
+}
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+h2, h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+    background-color: #FE7743;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
