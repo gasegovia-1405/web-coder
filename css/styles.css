@@ -5,37 +5,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-header {
+.header_principal {
     display: flex;
-    text-align: center;
+    align-items: center;
+    justify-content: space-between;
     background-color: #447D9B;
     color: white;
-    padding: 10px;
-    text-align: left;
 }
-.logo_main{
-    text-align: left;
+.logo_header{
+    padding: 0px;
+    width: 30%;
 }
-.iconos_main{
-    text-align: end;
-}
-.titulo_main{
-    text-align: center;
-}
-
-nav {
-    background-color: #273F4F;
-    padding: 10px;
-}
-.nav_main{
+.h1_header{
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    list-style: none;
+    font-weight: 700;
+    font-size: 3.125rem;
+    padding-left: 0px;
 }
-.nav_main li a{
-    text-decoration: none;
-    color: #FE7743;
+.iconos_header{
+    display: flex;
+    flex-direction: row;
+}
+.loguito{
+    width: 4.6875rem;
+}
+.navbar-nav{
+    font-size: 1.375rem;
 }
 main{
     background-color: white;
@@ -46,17 +41,12 @@ p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 19px;
 }
-h1{
+.h2_subtitulo{
     font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 50px;
-}
-h2, h3{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 40px;
+    font-size: 2.8125rem;
     text-align: center;
     font-style: italic;
+    padding: 20px;
 }
 
 footer {
@@ -66,3 +56,133 @@ footer {
     padding: 15px;
     font-size: 0.9em;
 }
+.subtitulo_pages{
+    padding: 1.875rem;
+}
+.panel_index{
+    padding-top: 2.1875rem;
+    display: inline-flex;
+}
+.img_index{
+    width: 600px;
+}
+.texto_index{
+    padding: 3.125rem;
+    text-indent: 50px;
+    letter-spacing: 0.125rem;
+    line-height: 1.5;   
+}
+.img-fluid{
+    width: 18.75rem;
+
+}
+.mapita{
+    border-radius: 35px;
+}
+.map_form{
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+.map_form input, textarea{
+    border: 4px solid #447D9B;
+    border-radius: 5px;
+}
+.Botoncito_contacto{
+  border-radius: 1.25rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.Botoncito_contacto {
+  transition-duration: 0.4s;
+}
+
+.Botoncito_contacto:hover {
+  background-color: #447D9B;
+  color: white;
+}
+@media(max-width:1024px){
+.logo_header{
+    width: 40%;
+}
+.loguito{
+    width: 4.6875rem;
+}
+.header_principal {
+    background-color: #447D9B;
+    color: white;
+    display: flex;
+}
+h1{
+    display: none;
+}
+.panel_index{
+    padding-top: 2.1875rem;
+    display: grid;
+    text-align: center;
+}
+.texto_index{
+    padding: 3.125rem;
+    text-indent: 50px;
+    letter-spacing: 0.125rem;
+    line-height: 1.5;   
+}
+}
+@media(max-width:768px){
+.h2{
+    font-size: 3.125rem;
+}
+.logo_header{
+    width: 50%;
+}
+.iconos_header{
+    width: 50%;
+    flex-direction: row;
+    justify-content: end;
+}
+.loguito{
+    width: 65px;
+    display: flex;
+}
+.map_form{
+    display: block;
+    align-items: center;
+}
+}
+@media(max-width:425px){
+.logo_header{
+    width: 50%;
+}
+.iconos_header{
+    width: 50%;
+}
+.loguito{
+    width: 45px;
+}
+.img_index{
+    width: 300px;
+}
+.h2_subtitulo{
+    font-size: 25px;
+    text-decoration: underline;
+    display: flex;
+}
+p{
+    font-size:smaller ;
+}
+.mapita{
+    width: 350px;
+}}
+@media(max-width:320px){
+.h2_subtitulo{
+    font-size: smaller;
+}
+p{
+    text-align: justify;
+}
+.mapita{
+    width: 15.625rem;
+}}
