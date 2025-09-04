@@ -1,6 +1,14 @@
 /*font-family: "Montserrat", sans-serif;*/
 /*font-family: 'Times New Roman', Times, serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
+    display: flex;
+    text-align: center;
     background-color: #447D9B;
     color: white;
     padding: 10px;
@@ -30,7 +38,7 @@ nav {
     color: #FE7743;
 }
 main{
-    background-color: #D7D7D7;
+    background-color: white;
     padding: 10px;
 }
 p{
