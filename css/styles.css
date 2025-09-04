@@ -90,7 +90,7 @@ footer {
 }
 .Botoncito_contacto{
   border-radius: 1.25rem;
-  padding: 15px 32px;
+  padding: .9375rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -98,6 +98,14 @@ footer {
 }
 .Botoncito_contacto {
   transition-duration: 0.4s;
+}
+.Botoncito_catalogo {   
+  border-radius: 1.25rem;
+  padding: .625rem 1.5625rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .Botoncito_contacto:hover {
