@@ -1,0 +1,23 @@
+[33mcommit 13d24ad43a69d59c2ce83440af2d36f351bc8df5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: gasegovia-1405 <gaasegovia@gmail.com>
+Date:   Thu Sep 4 00:38:54 2025 -0300
+
+    se inserto grid basada en bootstrap en OFERTAS, se aplico flexbox a main, quienes_somos, y contacto. Se aplico responsive a todos los html
+
+[33mcommit e3bd4dc3d0ab9a5a83b9b335a031acab868b72d1[m
+Author: gasegovia-1405 <gaasegovia@gmail.com>
+Date:   Thu Sep 4 00:28:28 2025 -0300
+
+    prueba de git
+
+[33mcommit 2e028f260bb27bf23fd13101d13087d46243f58c[m
+Author: gasegovia-1405 <gaasegovia@gmail.com>
+Date:   Tue Sep 2 14:43:16 2025 -0300
+
+    se incorporo bootstrap al navbar, y se agrego catalogo html al proyecto
+
+[33mcommit c3d7e8ec638086bdef20cf207c9c68604f381dff[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: gasegovia-1405 <gaasegovia@gmail.com>
+Date:   Mon Sep 1 21:59:34 2025 -0300
+
+    prueba de git y subida de sitio con HTML y CSS aprobado de 1er practico
