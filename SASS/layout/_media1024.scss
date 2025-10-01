@@ -1,0 +1,12 @@
+@media (max-width: 1024px) {
+  .header_principal {
+    .logo_header { width: 40%; }
+    .loguito { width: 4.6875rem; }
+    h1 { display: none; }
+  }
+
+  .panel_index {
+    display: grid;
+    text-align: center;
+  }
+}

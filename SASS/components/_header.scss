@@ -1,0 +1,29 @@
+.header_principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-principal;
+  color: $color-blanco;
+
+  .logo_header {
+    padding: 0;
+    width: 30%;
+  }
+
+  .h1_header {
+    font-family: $fuente-principal;
+    font-weight: 700;
+    font-size: $tamano-h1;
+    padding-left: 0;
+  }
+
+  .iconos_header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .loguito {
+    width: 4.6875rem;
+  }
+
+}
