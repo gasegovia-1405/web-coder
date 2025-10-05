@@ -1,0 +1,33 @@
+main {
+  padding: 10px;
+
+  p {
+    text-align: center;
+    font-family: $fuente-secundaria;
+    font-size: 19px;
+  }
+
+  .h2_subtitulo {
+    font-family: $fuente-principal;
+    font-size: $tamano-h2;
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+  }
+}
+
+.panel_index {
+  padding-top: 2.1875rem;
+  display: inline-flex;
+
+  .img_index {
+    width: 600px;
+  }
+
+  .texto_index {
+    padding: 3.125rem;
+    text-indent: 50px;
+    letter-spacing: 0.125rem;
+    line-height: 1.5;
+  }
+}
