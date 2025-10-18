@@ -1,4 +1,4 @@
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: $breakpoint-mobile-md) {
   
   .header_principal {
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     padding: $espaciado-xs;
 
     .logo_header {
-      width: 12.5rem;
+      width: 9.375rem;
     }
 
     .iconos_header {
