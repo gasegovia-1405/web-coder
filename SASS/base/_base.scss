@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// ========================================
-// BASE STYLES
-// ========================================
-
 body {
   background-color: $color-blanco;
   font-family: $fuente-principal;
@@ -11,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 
-// Tipografía
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $fuente-principal;
   color: $color-gris;
@@ -39,14 +34,14 @@ p {
   line-height: 1.6;
 }
 
-// Contenedor general
+
 .container-custom {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 $espaciado-md;
 }
 
-// Utilidades
+
 .text-center {
   text-align: center;
 }
@@ -58,9 +53,4 @@ p {
 .mt-1 { margin-top: $espaciado-sm; }
 .mt-2 { margin-top: $espaciado-md; }
 .mt-3 { margin-top: $espaciado-lg; }
-=======
-body {
-  background-color: $color-blanco;
-  font-family: $fuente-principal;
-}
->>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5
+

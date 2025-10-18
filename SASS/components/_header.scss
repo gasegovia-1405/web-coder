@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-// ========================================
-// HEADER
-// ========================================
 
 .header_principal {
   display: flex;
@@ -61,38 +57,7 @@
   }
 }
 
-// Estados de accesibilidad
 .header_principal a:focus {
   outline: 2px solid $color-secundario;
   outline-offset: 2px;
-=======
-.header_principal {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: $color-principal;
-  color: $color-blanco;
-
-  .logo_header {
-    padding: 0;
-    width: 30%;
-  }
-
-  .h1_header {
-    font-family: $fuente-principal;
-    font-weight: 700;
-    font-size: $tamano-h1;
-    padding-left: 0;
-  }
-
-  .iconos_header {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .loguito {
-    width: 4.6875rem;
-  }
-
->>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5
 }

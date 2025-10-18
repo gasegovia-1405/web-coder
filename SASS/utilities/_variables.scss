@@ -1,21 +1,14 @@
-<<<<<<< HEAD
-// ========================================
-// VARIABLES
-// ========================================
 
-// Fuentes
 $fuente-principal: "Montserrat", sans-serif;
 $fuente-secundaria: 'Times New Roman', Times, serif;
 
-// Tamaños de fuente
-$tamano-h1: 3.125rem;   // 50px
-$tamano-h2: 2.8125rem;  // 45px
-$tamano-h3: 1.75rem;    // 28px
-$tamano-h4: 1.5rem;     // 24px
-$tamano-texto: 1rem;    // 16px
-$tamano-texto-sm: 0.875rem; // 14px
+$tamano-h1: 3.125rem;   
+$tamano-h2: 2.8125rem; 
+$tamano-h3: 1.75rem;   
+$tamano-h4: 1.5rem;    
+$tamano-texto: 1rem;   
+$tamano-texto-sm: 0.875rem;
 
-// Colores
 $color-principal: #447D9B;
 $color-secundario: #FE7743;
 $color-blanco: #fff;
@@ -26,7 +19,6 @@ $color-exito: #28a745;
 $color-error: #dc3545;
 $color-advertencia: #ffc107;
 
-// Espaciados
 $espaciado-xs: 5px;
 $espaciado-sm: 10px;
 $espaciado-md: 20px;
@@ -34,36 +26,22 @@ $espaciado-lg: 35px;
 $espaciado-xl: 50px;
 $espaciado-xxl: 75px;
 
-// Bordes
 $border-radius-sm: 5px;
 $border-radius-md: 10px;
 $border-radius-lg: 20px;
 $border-radius-xl: 35px;
 
-// Breakpoints
 $breakpoint-mobile-sm: 320px;
 $breakpoint-mobile: 425px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
 $breakpoint-desktop-lg: 1440px;
 
-// Transiciones
 $transition-rapida: 0.2s ease;
 $transition-normal: 0.3s ease;
 $transition-lenta: 0.4s ease;
 
-// Sombras
+
 $sombra-suave: 0 2px 4px rgba(0, 0, 0, 0.1);
 $sombra-media: 0 4px 8px rgba(0, 0, 0, 0.2);
 $sombra-fuerte: 0 8px 16px rgba(0, 0, 0, 0.3);
-=======
-$fuente-principal: "Montserrat", sans-serif;
-$fuente-secundaria: 'Times New Roman', Times, serif;
-
-$tamano-h1: 3.125rem;
-$tamano-h2: 2.8125rem;
-
-$color-principal: #447D9B;
-$color-secundario: #FE7743;
-$color-blanco: #fff;
->>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5

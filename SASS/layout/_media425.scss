@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 @media (max-width: $breakpoint-mobile) {
   
-  // Header
   .header_principal {
     flex-wrap: wrap;
     justify-content: center;
@@ -21,8 +19,6 @@
       width: 45px;
     }
   }
-
-  // Main
   main {
     padding: $espaciado-xs;
 
@@ -32,7 +28,7 @@
       padding: $espaciado-sm 0;
       
       &::after {
-        display: none; // Ocultar decoración
+        display: none;
       }
     }
 
@@ -42,8 +38,6 @@
       padding: 0 $espaciado-xs;
     }
   }
-
-  // Panel Index
   .panel_index {
     padding-top: $espaciado-sm;
 
@@ -58,8 +52,6 @@
       letter-spacing: normal;
     }
   }
-
-  // Formulario de contacto
   .map_form {
     padding: $espaciado-xs;
 
@@ -76,7 +68,6 @@
     }
   }
 
-  // Cards
   .card {
     .card-img-top {
       height: 150px;
@@ -95,7 +86,6 @@
     }
   }
 
-  // Navbar
   .navbar-nav {
     font-size: 1rem;
 
@@ -104,7 +94,6 @@
     }
   }
 
-  // Footer
   footer {
     padding: $espaciado-sm;
     font-size: 0.8em;
@@ -119,25 +108,12 @@
     }
   }
 
-  // Botones
   .Botoncito_contacto {
     padding: 10px 20px;
     font-size: 14px;
   }
 
-  // Imágenes
   .img-fluid {
     max-width: 100%;
   }
-=======
-@media (max-width: 425px) {
-  .logo_header { width: 50%; }
-  .iconos_header { width: 50%; }
-  .loguito { width: 45px; }
-  .img_index { width: 300px; }
-
-  .h2_subtitulo { font-size: 25px; text-decoration: underline; display: flex; }
-  p { font-size: smaller; }
-  .mapita { width: 350px; }
->>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5
 }
