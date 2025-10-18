@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: $breakpoint-mobile) {
   
   // Header
@@ -128,4 +129,15 @@
   .img-fluid {
     max-width: 100%;
   }
+=======
+@media (max-width: 425px) {
+  .logo_header { width: 50%; }
+  .iconos_header { width: 50%; }
+  .loguito { width: 45px; }
+  .img_index { width: 300px; }
+
+  .h2_subtitulo { font-size: 25px; text-decoration: underline; display: flex; }
+  p { font-size: smaller; }
+  .mapita { width: 350px; }
+>>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5
 }

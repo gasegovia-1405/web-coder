@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ========================================
 // RESET CSS
 // ========================================
@@ -49,4 +50,13 @@ input, textarea, select {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.2;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    list-style: none;
+>>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5
 }

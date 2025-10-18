@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ========================================
 // MEDIA QUERY: 768px (Tablets)
 // ========================================
@@ -106,3 +107,11 @@
     font-size: 15px;
   }
 }
+=======
+@media (max-width: 768px) {
+  .logo_header { width: 50%; }
+  .iconos_header { width: 50%; flex-direction: row; justify-content: end; }
+  .loguito { width: 4.0625rem; display: flex; }
+  .map_form { display: block; align-items: center; }
+}
+>>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5

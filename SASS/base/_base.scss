@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ========================================
 // BASE STYLES
 // ========================================
@@ -57,3 +58,9 @@ p {
 .mt-1 { margin-top: $espaciado-sm; }
 .mt-2 { margin-top: $espaciado-md; }
 .mt-3 { margin-top: $espaciado-lg; }
+=======
+body {
+  background-color: $color-blanco;
+  font-family: $fuente-principal;
+}
+>>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ========================================
 // COMPONENTES MISCELÁNEOS
 // ========================================
@@ -186,4 +187,39 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+=======
+.img-fluid {
+  width: 18.75rem;
+}
+
+.mapita {
+  border-radius: 35px;
+}
+
+.map_form {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+
+  input,
+  textarea {
+    border: 4px solid $color-principal;
+    border-radius: 5px;
+  }
+}
+
+.Botoncito_contacto {
+  border-radius: 1.25rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: $color-principal;
+    color: $color-blanco;
+  }
+>>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5
 }

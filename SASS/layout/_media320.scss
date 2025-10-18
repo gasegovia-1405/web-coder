@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: $breakpoint-mobile-sm) {
   
   // Header
@@ -141,4 +142,10 @@
     padding-left: 5px;
     padding-right: 5px;
   }
+=======
+@media (max-width: 320px) {
+  .h2_subtitulo { font-size: smaller; }
+  p { text-align: justify; }
+  .mapita { width: 15.625rem; }
+>>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5
 }

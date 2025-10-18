@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ========================================
 // FOOTER
 // ========================================
@@ -68,4 +69,12 @@ footer {
       transform: translateY(-3px);
     }
   }
+=======
+footer {
+  background-color: $color-secundario;
+  color: $color-blanco;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+>>>>>>> ebe1a6741cdea9d6fc8793b199d0088c24e5f8b5
 }
