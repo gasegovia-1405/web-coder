@@ -1,34 +1,189 @@
+// ========================================
+// COMPONENTES MISCELÁNEOS
+// ========================================
+
+// Imágenes responsive
 .img-fluid {
-  width: 18.75rem;
+  width: 100%;
+  max-width: 18.75rem;
+  height: auto;
+  border-radius: $border-radius-md;
 }
 
+// Mapa de Google
 .mapita {
-  border-radius: 35px;
-}
+  border-radius: $border-radius-xl;
+  width: 100%;
+  max-width: 500px;
+  height: 450px;
+  box-shadow: $sombra-media;
+  transition: $transition-normal;
 
-.map_form {
-  display: flex;
-  justify-content: center;
-  gap: 75px;
-
-  input,
-  textarea {
-    border: 4px solid $color-principal;
-    border-radius: 5px;
+  &:hover {
+    box-shadow: $sombra-fuerte;
   }
 }
 
+// Contenedor del formulario de contacto
+.map_form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: $espaciado-xxl;
+  flex-wrap: wrap;
+  padding: $espaciado-md;
+
+  > div {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  // Estilos para inputs y textareas
+  input,
+  textarea,
+  select {
+    border: 3px solid $color-principal;
+    border-radius: $border-radius-sm;
+    padding: $espaciado-sm;
+    width: 100%;
+    font-family: $fuente-principal;
+    font-size: $tamano-texto;
+    transition: $transition-normal;
+    margin-bottom: $espaciado-md;
+
+    &:focus {
+      outline: none;
+      border-color: $color-secundario;
+      box-shadow: 0 0 0 3px rgba($color-secundario, 0.1);
+      transform: translateY(-2px);
+    }
+
+    &:hover {
+      border-color: darken($color-principal, 10%);
+    }
+
+    &::placeholder {
+      color: lighten($color-gris, 30%);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: $espaciado-xs;
+    font-weight: 600;
+    color: $color-gris;
+  }
+}
+
+// Botón de contacto principal
 .Botoncito_contacto {
-  border-radius: 1.25rem;
+  border-radius: $border-radius-lg;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.4s;
+  font-weight: 600;
+  background-color: $color-secundario;
+  color: $color-blanco;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all $transition-lenta;
+  box-shadow: $sombra-suave;
 
   &:hover {
     background-color: $color-principal;
     color: $color-blanco;
+    transform: translateY(-3px);
+    box-shadow: $sombra-fuerte;
+    border-color: $color-principal;
   }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: $sombra-media;
+  }
+
+  &:focus {
+    outline: 3px solid rgba($color-secundario, 0.4);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+// Alertas y mensajes
+.alert-custom {
+  padding: $espaciado-md;
+  border-radius: $border-radius-sm;
+  margin-bottom: $espaciado-md;
+  border-left: 4px solid;
+
+  &.alert-success {
+    background-color: lighten($color-exito, 45%);
+    border-color: $color-exito;
+    color: darken($color-exito, 10%);
+  }
+
+  &.alert-error {
+    background-color: lighten($color-error, 45%);
+    border-color: $color-error;
+    color: darken($color-error, 10%);
+  }
+
+  &.alert-warning {
+    background-color: lighten($color-advertencia, 45%);
+    border-color: $color-advertencia;
+    color: darken($color-advertencia, 30%);
+  }
+}
+
+// Badges o etiquetas
+.badge-custom {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: $border-radius-md;
+  font-size: $tamano-texto-sm;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &.badge-new {
+    background-color: $color-exito;
+    color: $color-blanco;
+  }
+
+  &.badge-offer {
+    background-color: $color-error;
+    color: $color-blanco;
+  }
+
+  &.badge-stock {
+    background-color: $color-advertencia;
+    color: $color-gris;
+  }
+}
+
+// Spinner de carga (opcional)
+.spinner {
+  border: 4px solid $color-gris-claro;
+  border-top: 4px solid $color-principal;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: $espaciado-md auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

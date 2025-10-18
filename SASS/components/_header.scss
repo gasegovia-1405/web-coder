@@ -1,29 +1,67 @@
+// ========================================
+// HEADER
+// ========================================
+
 .header_principal {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $color-principal;
   color: $color-blanco;
+  padding: $espaciado-sm $espaciado-md;
+  box-shadow: $sombra-media;
+
+  a {
+    display: flex;
+    align-items: center;
+  }
 
   .logo_header {
-    padding: 0;
     width: 30%;
+    max-width: 150px;
+    height: auto;
+    transition: $transition-normal;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   .h1_header {
     font-family: $fuente-principal;
     font-weight: 700;
     font-size: $tamano-h1;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
+    color: $color-blanco;
   }
 
   .iconos_header {
     display: flex;
     flex-direction: row;
+    gap: $espaciado-sm;
+    align-items: center;
   }
 
   .loguito {
     width: 4.6875rem;
-  }
+    height: auto;
+    transition: $transition-normal;
+    filter: brightness(1);
 
+    &:hover {
+      transform: scale(1.15);
+      filter: brightness(1.2);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+// Estados de accesibilidad
+.header_principal a:focus {
+  outline: 2px solid $color-secundario;
+  outline-offset: 2px;
 }

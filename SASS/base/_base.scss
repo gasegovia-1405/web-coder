@@ -1,4 +1,59 @@
+// ========================================
+// BASE STYLES
+// ========================================
+
 body {
   background-color: $color-blanco;
   font-family: $fuente-principal;
+  font-size: $tamano-texto;
+  color: $color-gris;
+  overflow-x: hidden;
 }
+
+// Tipografía
+h1, h2, h3, h4, h5, h6 {
+  font-family: $fuente-principal;
+  color: $color-gris;
+  margin-bottom: $espaciado-md;
+}
+
+h1 {
+  font-size: $tamano-h1;
+}
+
+h2 {
+  font-size: $tamano-h2;
+}
+
+h3 {
+  font-size: $tamano-h3;
+}
+
+h4 {
+  font-size: $tamano-h4;
+}
+
+p {
+  margin-bottom: $espaciado-md;
+  line-height: 1.6;
+}
+
+// Contenedor general
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $espaciado-md;
+}
+
+// Utilidades
+.text-center {
+  text-align: center;
+}
+
+.mb-1 { margin-bottom: $espaciado-sm; }
+.mb-2 { margin-bottom: $espaciado-md; }
+.mb-3 { margin-bottom: $espaciado-lg; }
+
+.mt-1 { margin-top: $espaciado-sm; }
+.mt-2 { margin-top: $espaciado-md; }
+.mt-3 { margin-top: $espaciado-lg; }

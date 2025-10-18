@@ -1,10 +1,131 @@
-@media (max-width: 425px) {
-  .logo_header { width: 50%; }
-  .iconos_header { width: 50%; }
-  .loguito { width: 45px; }
-  .img_index { width: 300px; }
+@media (max-width: $breakpoint-mobile) {
+  
+  // Header
+  .header_principal {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: $espaciado-xs;
 
-  .h2_subtitulo { font-size: 25px; text-decoration: underline; display: flex; }
-  p { font-size: smaller; }
-  .mapita { width: 350px; }
+    .logo_header {
+      width: 50%;
+      max-width: 80px;
+    }
+
+    .iconos_header {
+      width: 50%;
+      gap: 5px;
+    }
+
+    .loguito {
+      width: 45px;
+    }
+  }
+
+  // Main
+  main {
+    padding: $espaciado-xs;
+
+    .h2_subtitulo {
+      font-size: 1.5rem;
+      text-decoration: underline;
+      padding: $espaciado-sm 0;
+      
+      &::after {
+        display: none; // Ocultar decoración
+      }
+    }
+
+    p {
+      font-size: 15px;
+      text-align: justify;
+      padding: 0 $espaciado-xs;
+    }
+  }
+
+  // Panel Index
+  .panel_index {
+    padding-top: $espaciado-sm;
+
+    .img_index {
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .texto_index {
+      padding: $espaciado-sm;
+      text-indent: 0;
+      letter-spacing: normal;
+    }
+  }
+
+  // Formulario de contacto
+  .map_form {
+    padding: $espaciado-xs;
+
+    .mapita {
+      width: 100%;
+      max-width: 350px;
+      height: 250px;
+    }
+
+    input,
+    textarea,
+    select {
+      font-size: 14px;
+    }
+  }
+
+  // Cards
+  .card {
+    .card-img-top {
+      height: 150px;
+    }
+
+    .card-body {
+      padding: $espaciado-sm;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+    }
+
+    .card-text {
+      font-size: 0.8rem;
+    }
+  }
+
+  // Navbar
+  .navbar-nav {
+    font-size: 1rem;
+
+    .nav-link {
+      padding: $espaciado-xs $espaciado-sm;
+    }
+  }
+
+  // Footer
+  footer {
+    padding: $espaciado-sm;
+    font-size: 0.8em;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.75em;
+      margin-bottom: $espaciado-xs;
+    }
+  }
+
+  // Botones
+  .Botoncito_contacto {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  // Imágenes
+  .img-fluid {
+    max-width: 100%;
+  }
 }

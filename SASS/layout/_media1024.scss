@@ -1,12 +1,78 @@
-@media (max-width: 1024px) {
+// ========================================
+// MEDIA QUERY: 1024px (Tablets y pequeñas laptops)
+// ========================================
+
+@media (max-width: $breakpoint-desktop) {
+  
+  // Header
   .header_principal {
-    .logo_header { width: 40%; }
-    .loguito { width: 4.6875rem; }
-    h1 { display: none; }
+    padding: $espaciado-sm;
+
+    .logo_header {
+      width: 40%;
+      max-width: 120px;
+    }
+
+    .h1_header {
+      display: none; // Ocultar título en tablets
+    }
+
+    .loguito {
+      width: 4.6875rem;
+    }
   }
 
+  // Main
+  main {
+    padding: $espaciado-md;
+
+    .h2_subtitulo {
+      font-size: 2rem;
+    }
+  }
+
+  // Panel Index
   .panel_index {
     display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
+    gap: $espaciado-md;
+
+    .img_index {
+      margin: 0 auto;
+    }
+
+    .texto_index {
+      padding: $espaciado-md;
+      text-indent: 0;
+    }
+  }
+
+  // Cards
+  .card {
+    .card-img-top {
+      height: 180px;
+    }
+  }
+
+  // Footer
+  footer {
+    padding: $espaciado-md;
+    font-size: 0.85em;
+  }
+
+  // Navbar
+  .navbar-nav {
+    font-size: 1.2rem;
+  }
+
+  // Formulario de contacto
+  .map_form {
+    gap: $espaciado-lg;
+
+    .mapita {
+      max-width: 100%;
+      height: 350px;
+    }
   }
 }

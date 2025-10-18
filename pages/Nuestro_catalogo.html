@@ -3,74 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestro Catálogo</title>
+    <meta name="description" content="Explora nuestro catálogo completo de productos mayoristas. Calidad y variedad para tu negocio">
+    <title>Nuestro Catálogo - DistriGo Mayorista</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <section class="header_principal">
-            <img class="logo_header" src="../assets/logo.png" alt="nuestro logo">
+            <a href="../index.html">
+                <img class="logo_header" src="../assets/logo.png" alt="DistriGo - Logo">
+            </a>
             <h1 class="h1_header">
                 DistriGo Mayorista
             </h1>
             <div class="iconos_header">
-                <a href="https://web.whatsapp.com/" target="_blank"><img class="loguito" src="../assets/wssp.png" alt="Nuestro whatsapp"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="loguito" src="../assets/insta.png" alt="Nuestro Instagram"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img class="loguito" src="../assets/face.png" alt="Nuestro facebook"></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="loguito" src="../assets/wssp.png" alt="Contactar por WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="loguito" src="../assets/insta.png" alt="Seguir en Instagram">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="loguito" src="../assets/face.png" alt="Seguir en Facebook">
+                </a>
             </div>
         </section>
     </header>
-         <nav class="navbar navbar-dark navbar-expand-lg navbar-light" style="background-color: #263F4F;"> 
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #263F4F;"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link" href="./quienes_somos.html">¿Quienes Somos?</a>
-                <a class="nav-link" href="./ofertas.html">Ofertas</a>
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-                <a class="nav-link" href="#">Nuestro Catalogo</a>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./quienes_somos.html">¿Quiénes Somos?</a>
+                    <a class="nav-link" href="./ofertas.html">Ofertas</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="./Nuestro_catalogo.html">Nuestro Catálogo</a>
+                </div>
             </div>
-            </div>
-            </div>
-        </nav>
-        <main>
-            <Section>
-                <div class="row border">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg" alt="">
+        </div>
+    </nav>
+    
+    <main>
+        <section class="container-fluid mt-4 mb-4">
+            <h2 class="text-center mb-4 h2_subtitulo">Nuestro Catálogo de Productos</h2>
+            <p class="text-center mb-5">Explora nuestra amplia variedad de productos para tu negocio</p>
+            <div class="mb-5">
+                <h3 class="mb-3">Almacén</h3>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/1898555/pexels-photo-1898555.jpeg" alt="Aceite de girasol">
+                            <div class="card-body">
+                                <h5 class="card-title">Aceite de Girasol</h5>
+                                <p class="card-text">Aceite puro de girasol 1.5L</p>
+                                <p class="fw-bold text-primary">Desde $3.500</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Almacén')">Consultar</button>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg" alt="Arroz">
+                            <div class="card-body">
+                                <h5 class="card-title">Arroz Grano Largo</h5>
+                                <p class="card-text">Arroz de primera calidad 1kg</p>
+                                <p class="fw-bold text-primary">Desde $1.200</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Almacén')">Consultar</button>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/6544376/pexels-photo-6544376.jpeg" alt="Fideos">
+                            <div class="card-body">
+                                <h5 class="card-title">Fideos Secos</h5>
+                                <p class="card-text">Variedad de fideos 500g</p>
+                                <p class="fw-bold text-primary">Desde $800</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Almacén')">Consultar</button>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg" alt="">
-                        </div>                    
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg" alt="Conservas">
+                            <div class="card-body">
+                                <h5 class="card-title">Conservas</h5>
+                                <p class="card-text">Tomates, arvejas, choclo</p>
+                                <p class="fw-bold text-primary">Desde $950</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Almacén')">Consultar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </Section>
-        </main>
-         <footer>
-            <div>
-                <h3>DistriGo</h3>
-                 <p>Dirección: Av. Calle falsa 123, Springfield, EE.UU</p>
-                  <p>Teléfono: +54 9 11 1234-5678</p>
-               <p>Email: contacto@DistriGo.com</p>
-             </div>
-             <div>
-                <p>© 2025 DistriGo. Todos los derechos reservados.</p>
             </div>
-        </footer>
+            <div class="mb-5">
+                <h3 class="mb-3">Bebidas</h3>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg" alt="Gaseosas">
+                            <div class="card-body">
+                                <h5 class="card-title">Gaseosas</h5>
+                                <p class="card-text">Coca Cola, Sprite, Fanta 2.25L</p>
+                                <p class="fw-bold text-primary">Desde $1.800</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Bebidas')">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/1194036/pexels-photo-1194036.jpeg" alt="Jugos">
+                            <div class="card-body">
+                                <h5 class="card-title">Jugos</h5>
+                                <p class="card-text">Jugos naturales 1L</p>
+                                <p class="fw-bold text-primary">Desde $1.200</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Bebidas')">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg" alt="Agua mineral">
+                            <div class="card-body">
+                                <h5 class="card-title">Agua Mineral</h5>
+                                <p class="card-text">Agua sin gas 2L</p>
+                                <p class="fw-bold text-primary">Desde $600</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Bebidas')">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/1282273/pexels-photo-1282273.jpeg" alt="Cervezas">
+                            <div class="card-body">
+                                <h5 class="card-title">Cervezas</h5>
+                                <p class="card-text">Quilmes, Brahma 1L</p>
+                                <p class="fw-bold text-primary">Desde $2.500</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Bebidas')">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5">
+                <h3 class="mb-3">Limpieza</h3>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg" alt="Detergente">
+                            <div class="card-body">
+                                <h5 class="card-title">Detergente</h5>
+                                <p class="card-text">Detergente líquido 3L</p>
+                                <p class="fw-bold text-primary">Desde $4.200</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Limpieza')">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/5217882/pexels-photo-5217882.jpeg" alt="Lavandina">
+                            <div class="card-body">
+                                <h5 class="card-title">Lavandina</h5>
+                                <p class="card-text">Lavandina concentrada 2L</p>
+                                <p class="fw-bold text-primary">Desde $1.500</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Limpieza')">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/5217882/pexels-photo-5217882.jpeg" alt="Limpiadores">
+                            <div class="card-body">
+                                <h5 class="card-title">Limpiadores</h5>
+                                <p class="card-text">Multiuso, pisos, baños</p>
+                                <p class="fw-bold text-primary">Desde $2.800</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Limpieza')">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://images.pexels.com/photos/5217882/pexels-photo-5217882.jpeg" alt="Desinfectantes">
+                            <div class="card-body">
+                                <h5 class="card-title">Desinfectantes</h5>
+                                <p class="card-text">Aerosol y líquido</p>
+                                <p class="fw-bold text-primary">Desde $3.200</p>
+                                <button class="btn btn-sm Botoncito_contacto" onclick="consultarCategoria('Limpieza')">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-lg Botoncito_contacto" onclick="solicitarCatalogoCompleto()">
+                    📄 Solicitar Catálogo Completo por WhatsApp
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div>
+            <h3>DistriGo</h3>
+            <p>Dirección: Av. Calle falsa 123, Springfield, EE.UU</p>
+            <p>Teléfono: +54 9 11 1234-5678</p>
+            <p>Email: contacto@DistriGo.com</p>
+        </div>
+        <div>
+            <p>© 2025 DistriGo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function consultarCategoria(categoria) {
+            const mensaje = `¡Hola! Me interesa conocer más sobre los productos de la categoría: *${categoria}*\n\n¿Podrían enviarme más información y precios?`;
+            const numeroWhatsApp = '5491112345678'; // Reemplaza con tu número real
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        function solicitarCatalogoCompleto() {
+            const mensaje = `¡Hola! Me gustaría recibir el catálogo completo de productos de DistriGo Mayorista.\n\n¿Podrían enviármelo por favor?`;
+            const numeroWhatsApp = '5491112345678'; // Reemplaza con tu número real
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

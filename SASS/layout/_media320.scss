@@ -1,5 +1,144 @@
-@media (max-width: 320px) {
-  .h2_subtitulo { font-size: smaller; }
-  p { text-align: justify; }
-  .mapita { width: 15.625rem; }
+@media (max-width: $breakpoint-mobile-sm) {
+  
+  // Header
+  .header_principal {
+    padding: 5px;
+
+    .logo_header {
+      width: 60%;
+      max-width: 70px;
+    }
+
+    .iconos_header {
+      width: 40%;
+      gap: 3px;
+    }
+
+    .loguito {
+      width: 35px;
+    }
+  }
+
+  // Main
+  main {
+    padding: 5px;
+
+    .h2_subtitulo {
+      font-size: 1.2rem;
+      padding: $espaciado-xs 0;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: justify;
+      line-height: 1.5;
+    }
+  }
+
+  // Panel Index
+  .panel_index {
+    padding-top: $espaciado-xs;
+
+    .img_index {
+      max-width: 100%;
+    }
+
+    .texto_index {
+      padding: $espaciado-xs;
+      text-indent: 0;
+    }
+  }
+
+  // Formulario de contacto
+  .map_form {
+    padding: 5px;
+
+    .mapita {
+      width: 100%;
+      max-width: 250px;
+      height: 200px;
+    }
+
+    input,
+    textarea,
+    select {
+      padding: 8px;
+      font-size: 13px;
+    }
+
+    label {
+      font-size: 13px;
+    }
+  }
+
+  // Cards
+  .card {
+    .card-img-top {
+      height: 120px;
+    }
+
+    .card-body {
+      padding: $espaciado-xs;
+    }
+
+    .card-title {
+      font-size: 1rem;
+    }
+
+    .card-text {
+      font-size: 0.75rem;
+    }
+  }
+
+  // Navbar
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .navbar-nav {
+    font-size: 0.9rem;
+
+    .nav-link {
+      padding: 5px $espaciado-xs;
+    }
+  }
+
+  // Footer
+  footer {
+    padding: $espaciado-xs;
+    font-size: 0.75em;
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.7em;
+      margin-bottom: 5px;
+    }
+  }
+
+  // Botones
+  .Botoncito_contacto {
+    padding: 8px 16px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  // Contenedores
+  .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  // Espaciados generales
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .col-12, .col-sm-12, .col-md-6, .col-lg-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

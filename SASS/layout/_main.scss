@@ -1,10 +1,18 @@
+// ========================================
+// MAIN
+// ========================================
+
 main {
-  padding: 10px;
+  padding: $espaciado-md;
+  min-height: calc(100vh - 300px);
 
   p {
     text-align: center;
     font-family: $fuente-secundaria;
     font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: $espaciado-md;
+    color: $color-gris;
   }
 
   .h2_subtitulo {
@@ -12,22 +20,98 @@ main {
     font-size: $tamano-h2;
     text-align: center;
     font-style: italic;
-    padding: 20px;
+    padding: $espaciado-md;
+    color: $color-principal;
+    margin-bottom: $espaciado-lg;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 3px;
+      background-color: $color-secundario;
+      margin: $espaciado-md auto 0;
+      border-radius: 2px;
+    }
   }
 }
 
+// Panel principal del index
 .panel_index {
-  padding-top: 2.1875rem;
-  display: inline-flex;
+  padding-top: $espaciado-lg;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $espaciado-md;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    flex: 1;
+    min-width: 300px;
+  }
 
   .img_index {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: $border-radius-md;
+    box-shadow: $sombra-media;
+    transition: $transition-normal;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: $sombra-fuerte;
+    }
   }
 
   .texto_index {
-    padding: 3.125rem;
+    padding: $espaciado-lg;
     text-indent: 50px;
     letter-spacing: 0.125rem;
-    line-height: 1.5;
+    line-height: 1.8;
+    text-align: justify;
+
+    h2 {
+      text-indent: 0;
+      margin-bottom: $espaciado-md;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+// Sección de productos/ofertas
+.card {
+  transition: $transition-normal;
+  border: none;
+  box-shadow: $sombra-suave;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $sombra-fuerte;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: $border-radius-sm $border-radius-sm 0 0;
+  }
+
+  .card-body {
+    padding: $espaciado-md;
+  }
+
+  .card-title {
+    font-size: $tamano-h4;
+    color: $color-principal;
+    margin-bottom: $espaciado-sm;
+  }
+
+  .card-text {
+    color: $color-gris;
+    font-size: $tamano-texto-sm;
   }
 }

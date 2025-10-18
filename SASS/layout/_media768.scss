@@ -1,6 +1,108 @@
-@media (max-width: 768px) {
-  .logo_header { width: 50%; }
-  .iconos_header { width: 50%; flex-direction: row; justify-content: end; }
-  .loguito { width: 4.0625rem; display: flex; }
-  .map_form { display: block; align-items: center; }
+// ========================================
+// MEDIA QUERY: 768px (Tablets)
+// ========================================
+
+@media (max-width: $breakpoint-tablet) {
+  
+  // Header
+  .header_principal {
+    .logo_header {
+      width: 50%;
+      max-width: 100px;
+    }
+
+    .iconos_header {
+      width: 50%;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: $espaciado-xs;
+    }
+
+    .loguito {
+      width: 4.0625rem;
+    }
+  }
+
+  // Main
+  main {
+    padding: $espaciado-sm;
+
+    .h2_subtitulo {
+      font-size: 1.75rem;
+      padding: $espaciado-md 0;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  // Panel Index
+  .panel_index {
+    padding-top: $espaciado-md;
+
+    .img_index {
+      max-width: 100%;
+    }
+
+    .texto_index {
+      padding: $espaciado-sm;
+      letter-spacing: normal;
+    }
+  }
+
+  // Formulario de contacto
+  .map_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $espaciado-md;
+
+    > div {
+      width: 100%;
+    }
+
+    .mapita {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  // Cards
+  .card {
+    margin-bottom: $espaciado-md;
+
+    .card-img-top {
+      height: 200px;
+    }
+  }
+
+  // Navbar
+  .navbar-nav {
+    font-size: 1.1rem;
+    
+    .nav-link {
+      padding: $espaciado-sm;
+    }
+  }
+
+  // Footer
+  footer {
+    padding: $espaciado-md $espaciado-sm;
+    
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.85em;
+    }
+  }
+
+  // Botones
+  .Botoncito_contacto {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 15px;
+  }
 }

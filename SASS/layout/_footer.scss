@@ -1,7 +1,71 @@
+// ========================================
+// FOOTER
+// ========================================
+
 footer {
   background-color: $color-secundario;
   color: $color-blanco;
   text-align: center;
-  padding: 15px;
+  padding: $espaciado-lg $espaciado-md;
   font-size: 0.9em;
+  margin-top: $espaciado-xxl;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+
+  h3, h4 {
+    color: $color-blanco;
+    margin-bottom: $espaciado-md;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: $espaciado-sm;
+    line-height: 1.6;
+    color: $color-blanco;
+  }
+
+  a {
+    color: $color-blanco;
+    text-decoration: underline;
+    transition: $transition-normal;
+
+    &:hover {
+      color: $color-principal;
+      text-decoration: none;
+    }
+  }
+
+  > div {
+    margin-bottom: $espaciado-md;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-top: $espaciado-md;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 0.85em;
+    }
+  }
+}
+
+// Iconos sociales en el footer (si los agregas)
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: $espaciado-md;
+  margin-top: $espaciado-md;
+
+  a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: $transition-normal;
+
+    &:hover {
+      background-color: $color-principal;
+      transform: translateY(-3px);
+    }
+  }
 }
