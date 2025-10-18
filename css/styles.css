@@ -279,7 +279,7 @@ footer > div:last-child {
   justify-content: space-between;
   background-color: #447D9B;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 35px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .header_principal a {
@@ -287,13 +287,17 @@ footer > div:last-child {
   align-items: center;
 }
 .header_principal .logo_header {
-  width: 30%;
-  max-width: 150px;
+  width: 180px;
   height: auto;
   transition: 0.3s ease;
 }
 .header_principal .logo_header:hover {
   transform: scale(1.05);
+}
+@media (min-width: 992px) {
+  .header_principal .logo_header {
+    width: 220px;
+  }
 }
 .header_principal .h1_header {
   font-family: "Montserrat", sans-serif;
@@ -302,6 +306,8 @@ footer > div:last-child {
   margin: 0;
   padding: 0;
   color: #fff;
+  text-align: center;
+  flex-grow: 1;
 }
 .header_principal .iconos_header {
   display: flex;
@@ -309,17 +315,17 @@ footer > div:last-child {
   gap: 10px;
   align-items: center;
 }
-.header_principal .loguito {
-  width: 4.6875rem;
+.header_principal .iconos_header .loguito {
+  width: 3.5rem;
   height: auto;
   transition: 0.3s ease;
   filter: brightness(1);
 }
-.header_principal .loguito:hover {
+.header_principal .iconos_header .loguito:hover {
   transform: scale(1.15);
   filter: brightness(1.2);
 }
-.header_principal .loguito:active {
+.header_principal .iconos_header .loguito:active {
   transform: scale(0.95);
 }
 
@@ -558,8 +564,7 @@ footer > div:last-child {
     padding: 10px;
   }
   .header_principal .logo_header {
-    width: 40%;
-    max-width: 120px;
+    width: 13.75rem;
   }
   .header_principal .h1_header {
     display: none;
@@ -606,8 +611,7 @@ footer > div:last-child {
 }
 @media (max-width: 768px) {
   .header_principal .logo_header {
-    width: 50%;
-    max-width: 100px;
+    width: 13.75rem;
   }
   .header_principal .iconos_header {
     width: 50%;

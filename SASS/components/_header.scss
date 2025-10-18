@@ -1,11 +1,10 @@
-
 .header_principal {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $color-principal;
   color: $color-blanco;
-  padding: $espaciado-sm $espaciado-md;
+  padding: $espaciado-md $espaciado-lg;
   box-shadow: $sombra-media;
 
   a {
@@ -14,13 +13,16 @@
   }
 
   .logo_header {
-    width: 30%;
-    max-width: 150px;
+    width: 180px;
     height: auto;
     transition: $transition-normal;
 
     &:hover {
       transform: scale(1.05);
+    }
+
+    @media (min-width: 992px) {
+      width: 220px;
     }
   }
 
@@ -31,6 +33,8 @@
     margin: 0;
     padding: 0;
     color: $color-blanco;
+    text-align: center;
+    flex-grow: 1;
   }
 
   .iconos_header {
@@ -38,21 +42,21 @@
     flex-direction: row;
     gap: $espaciado-sm;
     align-items: center;
-  }
 
-  .loguito {
-    width: 4.6875rem;
-    height: auto;
-    transition: $transition-normal;
-    filter: brightness(1);
+    .loguito {
+      width: 3.5rem;
+      height: auto;
+      transition: $transition-normal;
+      filter: brightness(1);
 
-    &:hover {
-      transform: scale(1.15);
-      filter: brightness(1.2);
-    }
+      &:hover {
+        transform: scale(1.15);
+        filter: brightness(1.2);
+      }
 
-    &:active {
-      transform: scale(0.95);
+      &:active {
+        transform: scale(0.95);
+      }
     }
   }
 }
